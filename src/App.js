@@ -14,6 +14,7 @@ import DataIcon from 'material-ui/svg-icons/action/timeline';
 // Custom React Components
 // -----------------------
 import UsersListPanel from './components/usersListPanel';
+import ClockComponent from './components/ClockComponent';
 
 // import userProfiles from './data/users.json';
 var users = require('./data/users.json')
@@ -59,7 +60,7 @@ class App extends Component {
             </Tab>
           </Tabs>
         </Paper>
-        
+        <ClockComponent/>
        </MuiThemeProvider> 
       </div>
     );
