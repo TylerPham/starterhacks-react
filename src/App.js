@@ -15,8 +15,11 @@ import RaisedButton from 'material-ui/RaisedButton';
 
 // Custom React Components
 // -----------------------
-import TableExampleSimple from './TableExampleSimple';
-import usersListPanel from './usersListPanel';
+import UsersListPanel from './components/usersListPanel';
+
+// import userProfiles from './data/users.json';
+var users = require('./data/users.json')
+// console.log(users);
 
 const paperStyle={
   height: '100%',
@@ -33,7 +36,6 @@ class App extends Component {
           <h1 className="App-title">Alarm Race</h1>
         </header>
         <MuiThemeProvider>
-
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
@@ -43,7 +45,9 @@ class App extends Component {
             <Tab 
               label={"ALARM"}
               icon={<AlarmIcon/>}>
-              Hello World
+              
+              <UsersListPanel users={users}></UsersListPanel>
+
             </Tab>
             <Tab 
               label={"HISTORY"}
