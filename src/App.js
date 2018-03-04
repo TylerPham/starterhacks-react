@@ -11,8 +11,6 @@ import AlarmIcon from 'material-ui/svg-icons/action/alarm';
 import ProfileIcon from 'material-ui/svg-icons/social/person';
 import DataIcon from 'material-ui/svg-icons/action/timeline';
 
-import RaisedButton from 'material-ui/RaisedButton';
-
 // Custom React Components
 // -----------------------
 import UsersListPanel from './components/usersListPanel';
